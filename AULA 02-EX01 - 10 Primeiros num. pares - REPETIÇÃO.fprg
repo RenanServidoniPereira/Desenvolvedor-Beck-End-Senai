@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="User"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-08-03 09:35:36 "/>
+        <attribute name="created" value="VXNlcjtSRU5BTjsyMDI0LTA4LTAzOyIwODo0Njo0MSAiOzE5ODQ="/>
+        <attribute name="edited" value="VXNlcjtSRU5BTjsyMDI0LTA4LTAzOyIwOTozNTozNiAiOzE7MjA5NQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="contador, numero" type="Integer" array="False" size=""/>
+            <assign variable="contador" expression="1"/>
+            <assign variable="numero" expression="0"/>
+            <while expression="contador&lt;10">
+                <assign variable="numero" expression="numero+2"/>
+                <assign variable="contador" expression="contador+1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

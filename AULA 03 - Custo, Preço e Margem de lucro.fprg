@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="User"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-08-06 09:31:16 "/>
+        <attribute name="created" value="VXNlcjtSRU5BTjsyMDI0LTA4LTAzOyIxMToyMDoyMCAiOzE5Njc="/>
+        <attribute name="edited" value="VXNlcjtSRU5BTjsyMDI0LTA4LTA2OyIwOTozMToxNiAiOzQ7MjA5NQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="produto" type="String" array="False" size=""/>
+            <declare name="custos, precos, margens, i" type="Real" array="False" size=""/>
+            <for variable="i" start="0" end="2" direction="inc" step="1">
+                <output expression="&quot;Digite o nome do produto: &quot;" newline="True"/>
+                <input variable="produto"/>
+                <output expression="&quot;Digite o custo do produto: &quot;" newline="True"/>
+                <input variable="custos"/>
+                <output expression="&quot;Digite o pre&#231;o do produto: &quot;" newline="True"/>
+                <input variable="precos"/>
+                <assign variable="margens" expression="precos-custos"/>
+                <output expression="&quot;Produto&quot;&amp;(i+1)&amp;&quot;:&quot;&amp;produto&amp;&quot;-Margem de lucro: &quot;&amp;margens" newline="True"/>
+            </for>
+        </body>
+    </function>
+    <function name="divisao" type="Real" variable="resultado">
+        <parameters>
+            <parameter name="num1" type="Real" array="False"/>
+            <parameter name="num2" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <declare name="resultado" type="Real" array="False" size=""/>
+            <assign variable="resultado" expression="num1/num2"/>
+        </body>
+    </function>
+    <function name="multiplicacao" type="Real" variable="resultado">
+        <parameters>
+            <parameter name="num1" type="Real" array="False"/>
+            <parameter name="num2" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <declare name="resultado" type="Real" array="False" size=""/>
+        </body>
+    </function>
+    <function name="soma" type="Real" variable="resultado">
+        <parameters>
+            <parameter name="num1" type="Real" array="False"/>
+            <parameter name="num2" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <declare name="resultado" type="Real" array="False" size=""/>
+            <assign variable="resultado" expression="num1+num2"/>
+        </body>
+    </function>
+    <function name="subtracao" type="Real" variable="resultado">
+        <parameters>
+            <parameter name="num1" type="Real" array="False"/>
+            <parameter name="num2" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <declare name="resultado" type="Real" array="False" size=""/>
+            <assign variable="resultado" expression="num1-num2"/>
+        </body>
+    </function>
+</flowgorithm>
